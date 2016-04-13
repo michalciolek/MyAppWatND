@@ -15,6 +15,7 @@ import pl.edu.wat.student.michal.myappnd.R;
  * Created by Michał on 2016-04-09.
  */
 public class Main2Activity extends AppCompatActivity {
+    //TODO: zmienić nazwę Activity na intuicyjną
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

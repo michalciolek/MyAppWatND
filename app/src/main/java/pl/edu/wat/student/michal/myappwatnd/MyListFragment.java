@@ -15,6 +15,8 @@ import pl.edu.wat.student.michal.myappnd.R;
  * Created by Michał on 2016-04-09.
  */
 public class MyListFragment extends ListFragment implements AdapterView.OnItemClickListener {
+    //TODO: zamienić ListView na RecyclerView
+    //http://developer.android.com/training/material/lists-cards.html
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.my_list_fragment, container, false);
@@ -30,7 +32,7 @@ public class MyListFragment extends ListFragment implements AdapterView.OnItemCl
     }
 
     @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position,long id) {
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Toast.makeText(getActivity(), "Position: " + position + " of array was clicked", Toast.LENGTH_SHORT).show();
     }
 }

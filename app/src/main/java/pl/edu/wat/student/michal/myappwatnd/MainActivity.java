@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(context, "Witaj " + name + " !", Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(MainActivity.this,WelcomeActivity.class);
-        intent.putExtra(NAME, nameEditText.getText().toString());
+        intent.putExtra(NAME, name);
         startActivity(intent);
 
     }

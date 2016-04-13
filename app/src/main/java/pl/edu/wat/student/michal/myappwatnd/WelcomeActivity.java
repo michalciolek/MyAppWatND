@@ -25,7 +25,7 @@ public class WelcomeActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        nameView = (TextView)findViewById(R.id.textView);
+        nameView = (TextView) findViewById(R.id.textView);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout2);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -36,7 +36,9 @@ public class WelcomeActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String name = intent.getStringExtra(MainActivity.NAME);
 
-        nameView.setText("Witaj " + name + " !");
+        if (name != null) {
+            nameView.setText("Witaj " + name + " !");
+        }
 
     }
 

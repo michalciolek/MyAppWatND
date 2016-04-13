@@ -16,6 +16,7 @@ import pl.edu.wat.student.michal.myappnd.R;
  * Created by Michał on 2016-04-09.
  */
 public class MyListFragmentND extends ListFragment {
+    //TODO: zmienić nazwę Fragmentu na intuicyjną
 
     String[] list = { "Strona główna", "Informacje" };
 
